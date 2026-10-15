@@ -1,0 +1,18 @@
+[project]
+name = "timetable-solver"
+version = "0.1.0"
+description = "OR-Tools CP-SAT timetable engine with greedy fallback"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+ortools = ["ortools>=9.10"]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
